@@ -7,7 +7,6 @@ package com.nmote.oembed;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.Objects;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -34,9 +33,6 @@ public abstract class AbstractOEmbedProvider implements OEmbedProvider {
      *            Jackson ObjectMapper instance
      */
     public AbstractOEmbedProvider(OkHttpClient httpClient, ObjectMapper mapper) {
-        Objects.requireNonNull(httpClient);
-        Objects.requireNonNull(mapper);
-
         this.httpClient = httpClient;
         this.mapper = mapper;
     }

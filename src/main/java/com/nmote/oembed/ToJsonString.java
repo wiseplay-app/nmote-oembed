@@ -5,8 +5,6 @@
 
 package com.nmote.oembed;
 
-import java.util.Objects;
-
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -36,7 +34,7 @@ class ToJsonString {
             return buffer.toString();
         } catch (JsonProcessingException e) {
             System.err.println(e);
-            return Objects.toString(object);
+            return object.toString();
         }
     }
 

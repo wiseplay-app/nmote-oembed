@@ -5,8 +5,6 @@
 
 package com.nmote.oembed.embedly;
 
-import java.util.Objects;
-
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.nmote.oembed.AbstractOEmbedProvider;
 import com.nmote.oembed.ProviderEndpoint;
@@ -28,7 +26,6 @@ public class EmbedlyProvider extends AbstractOEmbedProvider {
 	public EmbedlyProvider(String apiKey) {
 		super();
 
-		Objects.requireNonNull(apiKey);
 		this.apiKey = apiKey;
 	}
 
@@ -45,7 +42,6 @@ public class EmbedlyProvider extends AbstractOEmbedProvider {
 	public EmbedlyProvider(String apiKey, OkHttpClient httpClient, ObjectMapper mapper) {
 		super(httpClient, mapper);
 
-		Objects.requireNonNull(apiKey);
 		this.apiKey = apiKey;
 	}
 

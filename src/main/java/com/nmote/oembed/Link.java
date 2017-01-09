@@ -8,7 +8,6 @@ package com.nmote.oembed;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import java.util.Objects;
 import java.util.StringTokenizer;
 import java.util.regex.Pattern;
 
@@ -213,8 +212,6 @@ public class Link {
 	 *            HTTP uri
 	 */
 	public Link(String uri) {
-		Objects.requireNonNull(uri);
-
 		this.uri = uri;
 		this.params = new ArrayList<>();
 	}

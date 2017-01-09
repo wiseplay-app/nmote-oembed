@@ -8,7 +8,6 @@ package com.nmote.oembed;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
-import java.util.Objects;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
@@ -82,7 +81,6 @@ public class ProviderInfo {
 	 *            provider's endpoints
 	 */
 	public void setEndpoints(List<ProviderEndpoint> endpoints) {
-		Objects.requireNonNull(endpoints);
 		this.endpoints = endpoints;
 	}
 
@@ -93,7 +91,6 @@ public class ProviderInfo {
 	 *            name
 	 */
 	public void setProviderName(String providerName) {
-		Objects.requireNonNull(providerName);
 		this.providerName = providerName;
 	}
 
@@ -104,7 +101,6 @@ public class ProviderInfo {
 	 *            url
 	 */
 	public void setProviderUrl(String providerUrl) {
-		Objects.requireNonNull(providerUrl);
 		this.providerUrl = providerUrl;
 	}
 

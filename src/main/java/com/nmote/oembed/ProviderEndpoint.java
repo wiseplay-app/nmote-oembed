@@ -8,7 +8,6 @@ package com.nmote.oembed;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashSet;
-import java.util.Objects;
 import java.util.Set;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -162,7 +161,6 @@ public class ProviderEndpoint {
 	 *            URL schemes
 	 */
 	public void setSchemes(Set<String> schemes) {
-		Objects.requireNonNull(schemes);
 		this.schemes = schemes;
 	}
 
@@ -173,7 +171,6 @@ public class ProviderEndpoint {
 	 *            url
 	 */
 	public void setUrl(String endpointUrl) {
-		Objects.requireNonNull(endpointUrl);
 		this.url = endpointUrl;
 	}
 
