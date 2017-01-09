@@ -1081,5 +1081,21 @@
                 "discovery": true
             }
         ]
+    },
+    {
+        "provider_name": "Facebook",
+        "provider_url": "https:\/\/www.facebook.com",
+        "endpoints": [
+            {
+                "schemes": [
+                    "http:\/\/facebook.com\/*",
+                    "https:\/\/facebook.com\/*",
+                    "http:\/\/www.facebook.com\/*",
+                    "https:\/\/www.facebook.com\/*"
+                ],
+                "url": "https://www.facebook.com/plugins/video/oembed.json/",
+                "discovery": true
+            }
+        ]
     }
 ]
